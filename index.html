@@ -3,58 +3,31 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
-<script src="./gps.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?language=en&key=AIzaSyCEC5bISNkbc_eVrLGMH8fp01Yx30aT9g0&callback=initMap" id ="scpt" async defer>
+<script src="./taiko.js"></script>
+
 </script>
 <style>
-html { height: 100% }
-body { height: 100% }
-#map { height: 60%; width: 100%}
-#map .gm-style img[src="./icon/hatitama.jpg"]{border-radius:50%}
-#map .gm-style img[src="./icon/laugh.jpg"]{border-radius:50%}
-#map .gm-style img[src="./icon/gundam.png"]{border-radius:50%}
-#map .gm-style img[src="./icon/hatena.jpg"]{border-radius:50%}
-.title{
-text-align:center;
-font-size:30px;
-color:#FFFFFF;
-text-shadow: 1px 1px 0 #000,
-             -1px 1px 0 #000,
-             1px -1px 0 #000,
-             -1px -1px 0 #000;
-}
-.btn{
+
+
+.button{
  width:27%;
- height:400%;
- line-height:400%;
+ height:50%;
+ line-height:50%;
  text-align:center;
  display:inline-block;
  border-radius:2px;
  text-decoration:none;
  margin:5px;
 }
-#btns{text-align: center}
-#position_view{font-size:8px}
+
 
 </style>
 </head>
 <body>
 
-<!--input type="button" onclick="getGps()" value="test"-->
-<div class="title">odaiba walk</div>
-<pre id="position_view"></pre>
-<input type="button" onclick="stop()" value="gps stop">
-<div id="map"></div>
-<div id="btns">
-<input type="button" value="ラフくん抽選!!" id="lot1" class="btn">
-<input type="button" value="フジテレビ抽選!" id="lot2" class="btn">
-<input type="button" value="ガンダム抽選!" id="lot3" class="btn">
-<br>
-<input type="button" value="抽選結果確認" id="kekka1" class="btn">
-<input type="button" value="抽選結果確認" id="kekka2" class="btn">
-<input type="button" value="抽選結果確認" id="kekka3" class="btn">
-<br>
-<input type="button" value="lsClear" id="lsClear" >
+<div id="button">
+<img id="btn" src="./btn.png">
+<audio id="sound" preload="auto" src="./pon.wav">
 </div>
 </body>
 </html>
