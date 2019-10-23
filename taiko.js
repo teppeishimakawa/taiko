@@ -5,5 +5,5 @@ tapp.addEventListener('click',function()
 {
 tapp.src="./btn2.png"
 audio.play();
-setTimeout(function(){tapp.src="./btn.png"},100)
+setTimeout(function(){tapp.src="./btn.png"},150)
 });
