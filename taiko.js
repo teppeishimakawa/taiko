@@ -28,7 +28,7 @@ audio.load();
 
 dv.addEventListener("touchstart",function(e)
 {
-audio.stop();
+//audio.stop();
 //audio.currentTime=0;
 audio.play();
 //tapp.src=img[1].src;
