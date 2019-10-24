@@ -14,5 +14,5 @@ tapp.onclick=function()
 {
 tapp.src=img[1].src
 audio.play();
-setTimeout(function(){tapp.src=img[0].src,150
-});
+setTimeout(function(){tapp.src=img[0].src,150})
+};
