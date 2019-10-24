@@ -13,7 +13,7 @@ tapp.src=img[0].src;
 
 
 
-tapp.ontouchend=function()
+tapp.ontouchstart=function()
 {
 tapp.src=img[1].src;
 
