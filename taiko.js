@@ -80,7 +80,7 @@ var defdef;
                 console.log(Math.abs(num_ls_def % def));
 
             if(cnt > 2){
-             def_total = def_total + defdef;
+             def_total = def_total + parseInt(defdef);
             }
 
 
