@@ -65,11 +65,14 @@ var defdef;
                  defdef=0
                 }else
                 {
-                defdef=def - localStorage.getItem('ls_def');
+                defdef=Math.min
+                 (
+                  def - localStorage.getItem('ls_def'),
+                  Math.max(def,localStorage.getItem('ls_def'))%Math.min(def,localStorage.getItem('ls_def'))
+                 );
                 }
 
-            if(cnt > 2)
-            {
+            if(cnt > 2){
              def_total = def_total + Math.abs(parseInt(defdef));
             }
 
