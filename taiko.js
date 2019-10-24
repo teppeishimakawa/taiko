@@ -75,7 +75,8 @@ var defdef;
                  );
                 }
 
-
+                console.log(Math.abs(def));
+                console.log(Math.abs(num_ls_def));
                 console.log(Math.abs(def - num_ls_def));
                 console.log(Math.abs(def % num_ls_def));
 
