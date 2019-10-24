@@ -99,7 +99,7 @@ document.getElementById("clr").onclick=localStorage.clear();
 
 document.getElementById("kekka").onclick=function()
 {
-document.getElementById("disp").innerHTML=100;
+document.getElementById("disp").innerHTML=100 - parseInt(def_total)/parseInt(cnt)/10;
 }
 
 
