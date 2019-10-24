@@ -74,7 +74,7 @@ var defdef;
 
 
                  console.log(def);
-                 console.log(localStorage.getItem('ls_def'));
+                 console.log(parseInt(localStorage.getItem('ls_def')));
                 //console.log(Math.abs(def - localStorage.getItem('ls_def')));
                 //console.log(Math.abs(Math.max(def,localStorage.getItem('ls_def'))%Math.min(def,localStorage.getItem('ls_def'))));
 
