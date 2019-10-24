@@ -14,9 +14,9 @@ tapp.addEventListener('touchstart',function()
 {
 tapp.src=img[1].src;
 audio.play();
-});
+},false);
 
 tapp.addEventListener('touchend',function()
 {
 tapp.src=img[0].src;
-});
+},false);
