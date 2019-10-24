@@ -1,7 +1,6 @@
 var cnt=0;
 var score=0;
 var old_time;
-var old_def;
 var def;
 var def_total=0;
 var day;
@@ -60,7 +59,7 @@ var defdef;
 
             old_time=day.getTime();
             localStorage.setItem('ls_time', old_time);
-            localStorage.setItem('ls_def', old_def);
+            localStorage.setItem('ls_def', def);
 
             console.log(def_total);
 
