@@ -13,7 +13,7 @@ tapp.src=img[0].src;
 
 
 
-tapp.ontouchstart=function()
+tapp.onclick=function()
 {
 //tapp.src=img[1].src;
 
@@ -48,7 +48,7 @@ tapp.src=img[0].src;
 //拡大縮小ガード
 try
 {
-document.addEventListener('click', function(e)
+document.addEventListener('touchstart', function(e)
  {
   if (event.touches.length > 1)
   {
