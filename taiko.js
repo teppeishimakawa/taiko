@@ -52,8 +52,21 @@ var defdef;
 
             console.log(defdef);
 
-             def=day.getTime() - localStorage.getItem('ls_time');
-             defdef=def - localStorage.getItem('ls_def');
+             if(localStorage.getItem('ls_time') == null)
+                {
+                 def=0
+                }else
+                {
+                def=day.getTime() - localStorage.getItem('ls_time');
+                }
+
+             if(localStorage.getItem('ls_def') == null)
+                {
+                 defdef=0
+                }else
+                {
+                defdef=def - localStorage.getItem('ls_def');
+                }
              def_total = def_total + Math.abs(parseInt(defdef));
 
 
