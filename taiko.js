@@ -12,8 +12,8 @@ tapp.src=img[0].src;
 
 
 
-
-tapp.ontouchend=function()
+/*
+tapp.ontouchend=function(e)
 {
 tapp.src=img[1].src;
 
@@ -22,23 +22,26 @@ audio.play();
 audio=new Audio("./pon.mp3");
 setTimeout(function(){tapp.src=img[0].src},150)
 };
+*/
 
 
-/*
-tapp.addEventListener("touchstart",function()
+
+tapp.addEventListener("touchstart",function(e)
 {
 tapp.src=img[1].src;
 audio.play();
 //連続再生用にキャッシュ用にaudio要素を作成
 audio=new Audio("./pon.mp3");
+e.preventDefault();
 });
 
 
-tapp.addEventListener("touchend",function()
+tapp.addEventListener("touchend",function(e)
 {
 tapp.src=img[0].src;
+e.preventDefault();
 });
-*/
+
 
 
 
