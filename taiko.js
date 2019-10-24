@@ -33,7 +33,7 @@ audio.load();
 dv.addEventListener("touchstart",function(e)
 {
 e.preventDefault();
-audio.play();
+audio.start();
 //tapp.src=img[1].src;
 //連続再生用にキャッシュ用にaudio要素を作成
 audio=new Audio("./pon.mp3");
