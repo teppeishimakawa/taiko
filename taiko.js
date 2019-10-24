@@ -1,58 +1,41 @@
+(function() {
+    'use strict';
 
+    var isSP, ctx, xml, data, frequencyRatioTempered, keyboards;
 
-var audio=new Audio("./pon.mp3");
+    // コンテキストを生成
+    window.AudioContext = window.AudioContext || window.webkitAudioContext;
+    ctx = new AudioContext();
 
-var tapp=document.getElementById("btn");
-var dv=document.getElementById("dvbtn");
+    // 音源ファイルをバイナリデータとして取得
+    xml = new XMLHttpRequest();
+    xml.responseType = 'arraybuffer';
+    xml.open('GET', './pon.mp3', true);
+    xml.onload = function()
+    {
+        // 音源ファイルをバイナリデータからデコード
+        ctx.decodeAudioData(
+            xml.response,
+            function(dec_data) {
+                data = dec_data;
+            },
+            function(e) {
+                alert(e.err);
+            }
+        );
+    };
+    xml.send();
 
-tapp.src='./btn.png';
+    isSP = typeof window.ontouchstart !== 'undefined';
 
+        document.getElementById("btn").addEventListener(isSP ? 'touchstart' : 'click', function()
+        {
+            var bufferSource;
+            bufferSource = ctx.createBufferSource();
+            bufferSource.buffer = data;
+            bufferSource.connect(ctx.destination);
+            bufferSource.start(0);
+        });
 
-
-/*
-tapp.ontouchend=function(e)
-{
-tapp.src=img[1].src;
-
-audio.play();
-//連続再生用にキャッシュ用にaudio要素を作成
-audio=new Audio("./pon.mp3");
-setTimeout(function(){tapp.src=img[0].src},150)
-};
-*/
-
-//audio.load();
-
-
-dv.addEventListener("touchstart",function(e)
-{
-tapp.src='./btn2.png';
-},false);
-
-dv.addEventListener("touchmove",function(e)
-{
-e.preventDefault();
-},false);
-
-dv.addEventListener("touchend",function(e)
-{
-tapp.src='./btn.png';
-},false);
-
-
-
-
-//拡大縮小ガード
-try
-{
-document.addEventListener('touchstart', function(e)
- {
-  if (event.touches.length > 1)
-  {
-    event.preventDefault();
-  }
- }, {passive: false});
-}catch(e)
-{
- false
-}
+    });
+();
