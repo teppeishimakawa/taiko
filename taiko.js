@@ -1,3 +1,11 @@
+var cnt=0;
+var score=0;
+var day=new Date();
+var old_time;
+var def;
+var def_total=0;
+
+
 (function() {
     'use strict';
 
@@ -35,8 +43,23 @@
             bufferSource.buffer = data;
             bufferSource.connect(ctx.destination);
             bufferSource.start(0);
+
             navigator.vibrate( 500 );
+            cnt++;
+
+            if(localStorage.getItem('ls_time'))
+             {
+             def=day.getTime() - localStorage.getItem('ls_time');
+             def_total+=def;
+             }else{return}
+
+            old_time=day.getTime();
+            localStorage.setItem('ls_time', old_time);
+
+            console.log(def_total);
+            console.log(cnt);
         });
 
     })
 ();
+
