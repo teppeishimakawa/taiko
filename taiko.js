@@ -27,22 +27,20 @@ setTimeout(function(){tapp.src=img[0].src},150)
 
 
 
-dv.addEventListener("touchend",function(e)
+dv.addEventListener("touchstart",function(e)
 {
 audio.play();
-tapp.src=img[1].src;
-setTimeout(function(){tapp.src=img[0].src},100)
+//tapp.src=img[1].src;
 //連続再生用にキャッシュ用にaudio要素を作成
 audio=new Audio("./pon.mp3");
 });
 
 
-/*
 dv.addEventListener("touchend",function(e)
 {
-tapp.src=img[0].src;
+//tapp.src=img[0].src;
 });
-*/
+
 
 
 
