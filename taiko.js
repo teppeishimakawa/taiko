@@ -44,7 +44,7 @@ var defdef;
             bufferSource.connect(ctx.destination);
             bufferSource.start(0);
 
-            try{navigator.vibrate(5000)}catch(e){return false}
+            try{navigator.vibrate(5000)}catch(e){}
 
             cnt++;
 
@@ -96,7 +96,7 @@ document.getElementById("clr").onclick=function(){localStorage.clear();}
 
 document.getElementById("kekka").onclick=function()
 {
-document.getElementById("disp").innerHTML=100 -cnt/10;
+document.getElementById("disp").innerHTML=100 - def_total/cnt/10;
 };
 
    })
