@@ -80,7 +80,7 @@ var defdef;
                 console.log(Math.abs(num_ls_def % def));
 
             if(cnt > 2){
-             def_total = def_total + parseInt(defdef);
+             def_total = def_total + defdef;
             }
 
 
@@ -99,7 +99,7 @@ document.getElementById("clr").onclick=localStorage.clear();
 
 document.getElementById("kekka").onclick=function()
 {
-document.getElementById("disp").innerHTML=100 - (def_total/cnt/10);
+document.getElementById("disp").innerHTML=100 - parseInt(def_total/cnt/10);
 }
 
 
