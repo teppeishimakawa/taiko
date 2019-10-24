@@ -67,7 +67,11 @@ var defdef;
                 {
                 defdef=def - localStorage.getItem('ls_def');
                 }
+
+            if(cnt > 2)
+            {
              def_total = def_total + Math.abs(parseInt(defdef));
+            }
 
 
             old_time=day.getTime();
