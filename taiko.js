@@ -10,13 +10,9 @@ var tapp=document.getElementById("btn");
 
 tapp.src=img[0].src;
 
-tapp.addEventListener('touchstart',function()
+tapp.onclick=function()
 {
-tapp.src=img[1].src;
+tapp.src=img[1].src
 audio.play();
-},false);
-
-tapp.addEventListener('touchend',function()
-{
-tapp.src=img[0].src;
-},false);
+setTimeout(function(){tapp.src=img[0].src,150
+});
