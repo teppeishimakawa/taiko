@@ -47,13 +47,11 @@ var def_total=0;
             try{navigator.vibrate( 500 )}catch(e){return false}
 
             cnt++;
-            console.log(cnt);
 
-            if(localStorage.getItem('ls_time'))
-             {
+
              def=day.getTime() - localStorage.getItem('ls_time');
              def_total+=def;
-             }else{}
+
 
             old_time=day.getTime();
             localStorage.setItem('ls_time', old_time);
