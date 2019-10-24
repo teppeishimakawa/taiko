@@ -67,8 +67,8 @@ var defdef;
                 {
                 defdef=Math.min
                  (
-                  def - localStorage.getItem('ls_def'),
-                  Math.max(def,localStorage.getItem('ls_def'))%Math.min(def,localStorage.getItem('ls_def'))
+                  Math.abs(def - localStorage.getItem('ls_def')),
+                  Math.abs(Math.max(def,localStorage.getItem('ls_def'))%Math.min(def,localStorage.getItem('ls_def')))
                  );
                 }
 
@@ -76,7 +76,7 @@ var defdef;
                 console.log(Math.max(def,localStorage.getItem('ls_def'))%Math.min(def,localStorage.getItem('ls_def')));
 
             if(cnt > 2){
-             def_total = def_total + Math.abs(parseInt(defdef));
+             def_total = def_total + parseInt(defdef);
             }
 
 
