@@ -73,7 +73,7 @@ var defdef;
                 }
 
                 console.log(def - localStorage.getItem('ls_def'));
-                console.log(Math.max(def,localStorage.getItem('ls_def'))%Math.min(def,localStorage.getItem('ls_def')));
+                console.log((Math.max(def,localStorage.getItem('ls_def')))%(Math.min(def,localStorage.getItem('ls_def'))));
 
             if(cnt > 2){
              def_total = def_total + Math.abs(parseInt(defdef));
