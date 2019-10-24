@@ -1,6 +1,6 @@
 
 
-html, body, ul {
+html, body{
     width: 100%;
     height: 100%;
     margin: 0;
@@ -15,8 +15,7 @@ html, body, ul {
 }
 .btnn{
     float: left;
-    width: 100%;
-    height: 100%;
+
 }
 
 .btnn:nth-of-type(2) {left: 8%}
