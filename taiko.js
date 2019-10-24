@@ -1,6 +1,5 @@
 var cnt=0;
 var score=0;
-var day=new Date();
 var old_time;
 var def;
 var def_total=0;
@@ -47,6 +46,8 @@ var def_total=0;
             try{navigator.vibrate( 500 )}catch(e){return false}
 
             cnt++;
+
+            var day=new Date();
 
             console.log(day.getTime());
             console.log(localStorage.getItem('ls_time'));
