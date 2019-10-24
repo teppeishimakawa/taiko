@@ -6,7 +6,8 @@ img[1].src='./btn2.png';
 
 var audio=new Audio("./pon.mp3");
 
-var tapp=document.getElementById("dvbtn");
+var tapp=document.getElementById("btn");
+var dv=document.getElementById("dvbtn");
 
 tapp.src=img[0].src;
 
@@ -26,7 +27,7 @@ setTimeout(function(){tapp.src=img[0].src},150)
 
 
 
-tapp.addEventListener("touchstart",function(e)
+dv.addEventListener("touchstart",function(e)
 {
 tapp.src=img[1].src;
 audio.play();
@@ -36,7 +37,7 @@ e.preventDefault();
 });
 
 
-tapp.addEventListener("touchend",function(e)
+dv.addEventListener("touchend",function(e)
 {
 tapp.src=img[0].src;
 e.preventDefault();
