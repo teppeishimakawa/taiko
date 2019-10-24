@@ -37,5 +37,5 @@
             bufferSource.start(0);
         });
 
-    });
+    })
 ();
