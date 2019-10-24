@@ -3,7 +3,7 @@ var score=0;
 var old_time;
 var def;
 var def_total=0;
-
+var day;
 
 (function() {
     'use strict';
@@ -47,7 +47,7 @@ var def_total=0;
 
             cnt++;
 
-            var day=new Date();
+            day=new Date();
 
             console.log(day.getTime());
             console.log(localStorage.getItem('ls_time'));
