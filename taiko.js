@@ -27,7 +27,7 @@ setTimeout(function(){tapp.src=img[0].src},150)
 
 
 
-dv.addEventListener("touchstart",function(e)
+dv.addEventListener("touchend",function(e)
 {
 audio.play();
 tapp.src=img[1].src;
