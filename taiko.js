@@ -96,7 +96,7 @@ document.getElementById("clr").onclick=function(){localStorage.clear();}
 
 document.getElementById("kekka").onclick=function()
 {
-document.getElementById("disp").innerHTML=100 - def_total/cnt/10;
+document.getElementById("disp").innerHTML=100 -cnt/10;
 };
 
    })
