@@ -6,7 +6,7 @@ img[1].src='./btn2.png';
 
 var audio=new Audio("./pon.mp3");
 
-var tapp=document.getElementById("btn");
+var tapp=document.getElementById("dvbtn");
 
 tapp.src=img[0].src;
 
