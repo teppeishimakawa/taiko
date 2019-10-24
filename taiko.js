@@ -14,5 +14,6 @@ tapp.onclick=function()
 {
 tapp.src=img[1].src;
 audio.play();
+audio=new Audio("./pon.wav");
 setTimeout(function(){tapp.src=img[0].src},150)
 };
