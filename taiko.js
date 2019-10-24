@@ -32,7 +32,6 @@ audio.load();
 
 dv.addEventListener("touchstart",function(e)
 {
-e.preventDefault();
 audio.play();
 //tapp.src=img[1].src;
 //連続再生用にキャッシュ用にaudio要素を作成
