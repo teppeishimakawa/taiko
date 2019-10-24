@@ -44,7 +44,8 @@ var def_total=0;
             bufferSource.connect(ctx.destination);
             bufferSource.start(0);
 
-            navigator.vibrate( 500 );
+            try{navigator.vibrate( 500 )}catch(e){return}
+
             cnt++;
 
             if(localStorage.getItem('ls_time'))
