@@ -44,7 +44,7 @@ var defdef;
             bufferSource.connect(ctx.destination);
             bufferSource.start(0);
 
-            try{navigator.vibrate( 500 )}catch(e){return false}
+            try{navigator.vibrate(5000)}catch(e){return false}
 
             cnt++;
 
@@ -72,8 +72,8 @@ var defdef;
                  );
                 }
 
-                console.log(def);
-                console.log(localStorage.getItem('ls_def'));
+                console.log(def - localStorage.getItem('ls_def'));
+                console.log(Math.max(def,localStorage.getItem('ls_def'))%Math.min(def,localStorage.getItem('ls_def')));
 
             if(cnt > 2){
              def_total = def_total + Math.abs(parseInt(defdef));
