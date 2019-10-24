@@ -48,11 +48,12 @@ var def_total=0;
 
             cnt++;
             console.log(cnt);
+
             if(localStorage.getItem('ls_time'))
              {
              def=day.getTime() - localStorage.getItem('ls_time');
              def_total+=def;
-             }else{return false}
+             }else{}
 
             old_time=day.getTime();
             localStorage.setItem('ls_time', old_time);
