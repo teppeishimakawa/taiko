@@ -1,6 +1,7 @@
 var cnt=0;
 var score=0;
 var old_time;
+var old_def;
 var def;
 var def_total=0;
 var day;
@@ -49,14 +50,16 @@ var day;
 
             day=new Date();
 
-            console.log(def);
+            console.log(defdef);
 
              def=day.getTime() - localStorage.getItem('ls_time');
-             def_total = def_total + def;
+             defdef=def - localStorage.getItem('ls_def');
+             def_total = def_total + Math.abs(defdef);
 
 
             old_time=day.getTime();
             localStorage.setItem('ls_time', old_time);
+            localStorage.setItem('ls_def', old_def);
 
             console.log(def_total);
 
