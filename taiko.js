@@ -92,9 +92,6 @@ var defdef;
 
         });
 
-    })
-();
-
 document.getElementById("clr").onclick=localStorage.clear();
 
 document.getElementById("kekka").onclick=function()
@@ -102,4 +99,6 @@ document.getElementById("kekka").onclick=function()
 document.getElementById("disp").innerHTML=100 - def_total/cnt/10;
 }
 
+   })
+();
 
