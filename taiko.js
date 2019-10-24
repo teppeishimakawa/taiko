@@ -29,6 +29,7 @@ setTimeout(function(){tapp.src=img[0].src},150)
 
 dv.addEventListener("touchstart",function(e)
 {
+audio.load();
 audio.play();
 //tapp.src=img[1].src;
 //連続再生用にキャッシュ用にaudio要素を作成
