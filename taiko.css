@@ -8,10 +8,10 @@ html, body, ul {
 }
 
 .btnn {
-    transition: color .1s ease 0s;
+    transition: filter .1s ease 0s;
 }
 .btnn:active {
-    color: #DFFF30;
+        filter: brightness(1.5);
 }
 .btnn{
     float: left;
