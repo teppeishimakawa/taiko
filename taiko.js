@@ -24,22 +24,14 @@ audio=new Audio("./pon.mp3");
 setTimeout(function(){tapp.src=img[0].src},150)
 };
 */
-audio.load();
 
-dv.addEventListener("touchstart",function(e)
-{
-
-//audio.play();
-tapp.src=img[1].src;
-//連続再生用にキャッシュ用にaudio要素を作成
-//audio=new Audio("./pon.mp3");
-
-},false);
+//audio.load();
 
 
 dv.addEventListener("touchend",function(e)
 {
-tapp.src=img[0].src;
+tapp.src=img[1].src;
+setTimeout(function(){tapp.src=img[0].src},100)
 },false);
 
 
