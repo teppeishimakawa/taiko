@@ -5,6 +5,7 @@ var old_def;
 var def;
 var def_total=0;
 var day;
+var defdef;
 
 (function() {
     'use strict';
