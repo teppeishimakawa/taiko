@@ -31,16 +31,18 @@ dv.addEventListener("touchstart",function(e)
 {
 audio.play();
 tapp.src=img[1].src;
+setTimeout(function(){tapp.src=img[0].src},100)
 //連続再生用にキャッシュ用にaudio要素を作成
 audio=new Audio("./pon.mp3");
 });
 
 
+/*
 dv.addEventListener("touchend",function(e)
 {
 tapp.src=img[0].src;
 });
-
+*/
 
 
 
