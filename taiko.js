@@ -77,7 +77,7 @@ var defdef;
 
 
                 console.log(Math.abs(def - num_ls_def));
-                console.log(Math.abs(Math.max(def,num_ls_def)%Math.min(def,num_ls_def)));
+                console.log(Math.abs(Math.max(def,num_ls_def));
 
             if(cnt > 2){
              def_total = def_total + defdef;
