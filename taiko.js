@@ -13,6 +13,13 @@ var def_total=0;
 
     // コンテキストを生成
     window.AudioContext = window.AudioContext || window.webkitAudioContext;
+
+
+        document.getElementById("btn").addEventListener(isSP ? 'touchstart' : 'click', function()
+        {
+
+
+
     ctx = new AudioContext();
 
     // 音源ファイルをバイナリデータとして取得
@@ -36,8 +43,9 @@ var def_total=0;
 
     isSP = typeof window.ontouchstart !== 'undefined';
 
-        document.getElementById("btn").addEventListener(isSP ? 'touchstart' : 'click', function()
-        {
+
+
+            
             var bufferSource;
             bufferSource = ctx.createBufferSource();
             bufferSource.buffer = data;
