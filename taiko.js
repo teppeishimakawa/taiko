@@ -25,10 +25,6 @@ setTimeout(function(){tapp.src=img[0].src},150)
 };
 */
 
-document.getElementById("loadbtn").addEventListener("click",function(e)
-{
-audio.load();
-},false);
 
 dv.addEventListener("touchstart",function(e)
 {
