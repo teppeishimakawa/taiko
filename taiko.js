@@ -29,6 +29,10 @@ dv.addEventListener("touchstart",function(e)
 tapp.src='./btn2.png';
 },false);
 
+dv.addEventListener("touchmove",function(e)
+{
+e.preventDefault();
+},false);
 
 dv.addEventListener("touchend",function(e)
 {
