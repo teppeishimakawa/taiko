@@ -24,14 +24,16 @@ setTimeout(function(){tapp.src=img[0].src},150)
 //audio.load();
 
 
-dv.addEventListener("touchend",function(e)
+dv.addEventListener("touchstart",function(e)
 {
 tapp.src='./btn2.png';
-setTimeout(function(){tapp.src='./btn.png';},100)
 },false);
 
 
-
+dv.addEventListener("touchend",function(e)
+{
+tapp.src='./btn.png';
+},false);
 
 
 
