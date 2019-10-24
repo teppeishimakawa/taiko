@@ -44,7 +44,7 @@ var def_total=0;
             bufferSource.connect(ctx.destination);
             bufferSource.start(0);
 
-            try{navigator.vibrate( 500 )}catch(e){return}
+            try{navigator.vibrate( 500 )}catch(e){return false}
 
             cnt++;
 
@@ -52,7 +52,7 @@ var def_total=0;
              {
              def=day.getTime() - localStorage.getItem('ls_time');
              def_total+=def;
-             }else{return}
+             }else{return false}
 
             old_time=day.getTime();
             localStorage.setItem('ls_time', old_time);
