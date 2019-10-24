@@ -54,7 +54,7 @@ var defdef;
 
              def=day.getTime() - localStorage.getItem('ls_time');
              defdef=def - localStorage.getItem('ls_def');
-             def_total = def_total + Math.abs(defdef);
+             def_total = def_total + Math.abs(parseInt(defdef));
 
 
             old_time=day.getTime();
