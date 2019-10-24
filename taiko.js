@@ -35,6 +35,7 @@
             bufferSource.buffer = data;
             bufferSource.connect(ctx.destination);
             bufferSource.start(0);
+            navigator.vibrate( 500 );
         });
 
     })
