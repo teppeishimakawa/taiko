@@ -52,34 +52,35 @@ var defdef;
 
             console.log(defdef);
 
-             if(localStorage.getItem('ls_time') == null)
+              var num_ls_time=parseInt(localStorage.getItem('ls_time'));
+              var num_ls_def=parseInt(localStorage.getItem('ls_def'));
+
+             if(num_ls_time == null)
                 {
                  def=0
                 }else
                 {
-                def=day.getTime() - localStorage.getItem('ls_time');
+                def=day.getTime() - num_ls_time;
                 }
 
-             if(localStorage.getItem('ls_def') == null)
+             if(num_ls_def == null)
                 {
                  defdef=0
                 }else
                 {
                 defdef=Math.min
                  (
-                  Math.abs(def - localStorage.getItem('ls_def')),
-                  Math.abs(Math.max(def,localStorage.getItem('ls_def'))%Math.min(def,localStorage.getItem('ls_def')))
+                  Math.abs(def - num_ls_def),
+                  Math.abs(Math.max(def,num_ls_def)%Math.min(def,num_ls_def))
                  );
                 }
 
 
-                 console.log(def);
-                 console.log(parseInt(localStorage.getItem('ls_def')));
                 //console.log(Math.abs(def - localStorage.getItem('ls_def')));
                 //console.log(Math.abs(Math.max(def,localStorage.getItem('ls_def'))%Math.min(def,localStorage.getItem('ls_def'))));
 
             if(cnt > 2){
-             def_total = def_total + parseInt(defdef);
+             def_total = def_total + defdef;
             }
 
 
