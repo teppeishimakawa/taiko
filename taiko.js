@@ -28,12 +28,15 @@ audio.load();
 
 dv.addEventListener("touchstart",function(e)
 {
+if(audio.play()){audio.stop()}else
+{
 //audio.stop();
 //audio.currentTime=0;
 audio.play();
 //tapp.src=img[1].src;
 //連続再生用にキャッシュ用にaudio要素を作成
 audio=new Audio("./pon.mp3");
+};
 },false);
 
 
