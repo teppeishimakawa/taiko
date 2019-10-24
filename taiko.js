@@ -68,3 +68,5 @@ var defdef;
     })
 ();
 
+document.getElementById("clr").onclick=localStorage.clear();
+
