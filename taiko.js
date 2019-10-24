@@ -1,15 +1,11 @@
-var img=[];
-img[0]=new Image();
-img[0].src='./btn.png';
-img[1]=new Image();
-img[1].src='./btn2.png';
+
 
 var audio=new Audio("./pon.mp3");
 
 var tapp=document.getElementById("btn");
 var dv=document.getElementById("dvbtn");
 
-tapp.src=img[0].src;
+tapp.src='./btn.png';
 
 
 
@@ -30,8 +26,8 @@ setTimeout(function(){tapp.src=img[0].src},150)
 
 dv.addEventListener("touchend",function(e)
 {
-tapp.src=img[1].src;
-setTimeout(function(){tapp.src=img[0].src},100)
+tapp.src='./btn2.png';
+setTimeout(function(){tapp.src='./btn.png';},100)
 },false);
 
 
