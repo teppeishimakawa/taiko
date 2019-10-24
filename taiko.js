@@ -49,8 +49,7 @@ var day;
 
             day=new Date();
 
-            console.log(day.getTime());
-            console.log(localStorage.getItem('ls_time'));
+            console.log(def);
 
              def=day.getTime() - localStorage.getItem('ls_time');
              def_total = def_total + def;
