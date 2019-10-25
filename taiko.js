@@ -103,7 +103,7 @@ document.getElementById("disp").innerHTML=100 - def_total/cnt/10 - Math.abs(cnt 
 };
 
 console.log(bpm);
-console.log(duration);
+//console.log(duration);
 
 
    })
