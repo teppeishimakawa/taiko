@@ -106,10 +106,12 @@ document.getElementById("set").onclick=function()
 {
 bpm=document.getElementById("bpm").value;
 duration=document.getElementById("duration").value;
-}
 
 console.log(bpm);
 console.log(duration);
+}
+
+
 
 
    })
