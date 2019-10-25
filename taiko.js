@@ -116,6 +116,17 @@ console.log(bpm);
 console.log(duration);
 }
 
+window.onload=function()
+{
+bpm=parseInt(document.getElementById("bpm").value);
+duration=parseInt(document.getElementById("duration").value);
+}
+
+document.getElementById("rld").onclick=function()
+{
+location.reload();
+}
+
 
    })
 ();
