@@ -44,7 +44,7 @@ var defdef;
             bufferSource.connect(ctx.destination);
             bufferSource.start(0);
 
-            try{navigator.vibrate(5000)}catch(e){return false}
+            try{navigator.vibrate(5000)}catch(e){}
 
             cnt++;
 
