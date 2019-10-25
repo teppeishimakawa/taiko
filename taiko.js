@@ -6,8 +6,8 @@ var def_total=0;
 var day;
 var defdef;
 
-var bpm=document.getElementById("bpm").value;
-var duration=document.getElementById("duration").value;
+var bpm=parseInt(document.getElementById("bpm").value);
+var duration=parseInt(document.getElementById("duration").value);
 
 (function() {
     'use strict';
