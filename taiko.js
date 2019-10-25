@@ -104,14 +104,12 @@ document.getElementById("disp").innerHTML=100 - def_total/cnt/10 - Math.abs(cnt 
 
 document.getElementById("set").onclick=function()
 {
-bpm=document.getElementById("bpm").value;
-duration=document.getElementById("duration").value;
+bpm=parseInt(document.getElementById("bpm").value);
+duration=parseInt(document.getElementById("duration").value);
 
 console.log(bpm);
 console.log(duration);
 }
-
-
 
 
    })
