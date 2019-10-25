@@ -41,6 +41,11 @@ var bpm,duration;
 
         document.getElementById("btn").addEventListener(isSP ? 'touchstart' : 'click', function()
         {
+
+            if(bpm == null || duration == null){alert("please enter bpm and duration!!")}
+          
+
+
             var bufferSource;
             bufferSource = ctx.createBufferSource();
             bufferSource.buffer = data;
