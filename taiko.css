@@ -24,3 +24,13 @@ div {
 	text-align:center;
     font-size:40px;
 }
+
+.btnsize{
+ width:20%;
+ height:100%;
+ line-height:100%;
+ display:inline-block;
+ border-radius:2px;
+ text-decoration:none;
+ margin:5px;
+}
