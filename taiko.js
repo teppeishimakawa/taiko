@@ -96,6 +96,7 @@ var bpm,duration;
             localStorage.setItem('ls_def', def);
 
             console.log(def_total);
+            console.log(Math.abs(cnt - bpm*duration/60/5));
 
         });
 
