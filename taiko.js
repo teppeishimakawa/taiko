@@ -6,8 +6,8 @@ var def_total=0;
 var day;
 var defdef;
 
-var bpm=parseInt(document.getElementById("bpm").value);
-var duration=parseInt(document.getElementById("duration").value);
+var bpm=document.getElementById("bpm").value;
+var duration=document.getElementById("duration").value;
 
 (function() {
     'use strict';
@@ -103,7 +103,7 @@ document.getElementById("disp").innerHTML=100 - def_total/cnt/10 - Math.abs(cnt 
 };
 
 console.log(bpm);
-//console.log(duration);
+console.log(duration);
 
 
    })
