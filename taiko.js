@@ -6,6 +6,9 @@ var def_total=0;
 var day;
 var defdef;
 
+var bpm=document.getElementById("bpm").value;
+var duration=document.getElementById("duration").value;
+
 (function() {
     'use strict';
 
@@ -96,8 +99,11 @@ document.getElementById("clr").onclick=function(){localStorage.clear();}
 
 document.getElementById("kekka").onclick=function()
 {
-document.getElementById("disp").innerHTML=100 - def_total/cnt/10;
+document.getElementById("disp").innerHTML=100 - def_total/cnt/10 - Math.abs(cnt - bpm*duration/60);
 };
+
+
+
 
    })
 ();
