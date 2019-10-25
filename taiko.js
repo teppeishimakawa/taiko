@@ -6,8 +6,11 @@ var def_total=0;
 var day;
 var defdef;
 
+document.getElementById("set").onclick=function()
+{
 var bpm=document.getElementById("bpm").value;
 var duration=document.getElementById("duration").value;
+}
 
 (function() {
     'use strict';
