@@ -77,6 +77,7 @@ var bpm,duration;
                 {
                 defdef=Math.min
                  (
+                //defdefは１つ前のdefとの差、それぞれの倍数の余りを比較し、最小値を採用
                   Math.abs(def - num_ls_def),
                   Math.abs(def % num_ls_def),Math.abs(num_ls_def % def)
                  );
@@ -104,7 +105,8 @@ document.getElementById("clr").onclick=function(){localStorage.clear();}
 
 document.getElementById("kekka").onclick=function()
 {
-document.getElementById("disp").innerHTML=Math.floor(100 - def_total/cnt/10 - Math.abs((cnt - bpm*duration/60)/5)) + "点!";
+//採点：100 - 1click平均の間隔の差/調整値 - 総click数とbpm*分数の差/調整値
+document.getElementById("disp").innerHTML=Math.floor(100 - def_total/cnt/8 - Math.abs((cnt - bpm*duration/60)/5)) + "点!";
 };
 
 document.getElementById("set").onclick=function()
