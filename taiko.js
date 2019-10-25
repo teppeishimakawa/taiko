@@ -5,12 +5,9 @@ var def;
 var def_total=0;
 var day;
 var defdef;
+var bpm,duration;
 
-document.getElementById("set").onclick=function()
-{
-var bpm=document.getElementById("bpm").value;
-var duration=document.getElementById("duration").value;
-}
+
 
 (function() {
     'use strict';
@@ -104,6 +101,12 @@ document.getElementById("kekka").onclick=function()
 {
 document.getElementById("disp").innerHTML=100 - def_total/cnt/10 - Math.abs(cnt - bpm*duration/60);
 };
+
+document.getElementById("set").onclick=function()
+{
+bpm=document.getElementById("bpm").value;
+duration=document.getElementById("duration").value;
+}
 
 console.log(bpm);
 console.log(duration);
